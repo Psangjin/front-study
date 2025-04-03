@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- label 암묵적인 방법-->
+    <label>패티추가<input type="checkbox"></label>
+    <label>치즈추가<input type="checkbox"></label>
+    <label>피클추가<input type="checkbox"></label>
+
+    <br><br>
+
+    <!-- label 명시적인 방법-->
+    <label for="addShot"></label>샷추가</label>      <input type="checkbox" id="addShot">
+    <label for="addIce"></label> 얼음추가</label>    <input type="checkbox" id="addIce">
+    <label for="less25"></label> 물25ml 적게</label> <input type="checkbox" id="less25">
+
+    <br><br>
+    <!-- fieldset , legend 태그-->
+    <fieldset>
+        <legend>족발 사이즈</legend>
+        <label>족발 소<input type="radio" name="size"></label>
+        <label>족발 중<input type="radio" name="size"></label>
+        <label>족발 대<input type="radio" name="size" checked></label><br>
+        <!-- 족발 "대" 사이즈 선택된 상태로 표시 태그 checked-->
+    </fieldset>
+
+    <br>
+
+    <!-- textarea 태그-->
+    <textarea>다중 텍스트 입력 공간</textarea>
+
+<br>
+<!-- select 태그-->
+<select>
+    <option>싸이버거</option>
+    <option>불고기버거</option>
+    <option>치즈버거</option>
+</select>
+
+<br><br><br>
+
+
+<select multiple size="6">
+    <optgroup label="햄버거">
+    <option>싸이버거</option>
+    <option>불고기버거</option>
+    <option>치즈버거</option>
+    </optgroup>
+
+    <optgroup label="면류">
+    <option selected>쫄면</option>
+    <option>자장면</option>
+    <option>짬뽕</option>
+    </optgroup>
+</select>
+    <br><br>
+    <input type="button" value="인풋버튼">
+    <input type="submit" value="인풋submit버튼">
+    <input type="reset" value="인풋reset버튼">
+    
+    <button type="button">태그버튼</button>
+
+    <button type="submit">태그submit버튼</button>
+    
+    <br>                    <!-- 흐리게 나오게 placeholder-->
+    <input type="text" value="하이">
+    <input type="text" placeholder="아이디를 입력하세요">
+
+
+    <h3>form</h3>           <!-- 폼(form) 안에 있는 것에만 영향을 준다-->
+    <form>
+        <input type="text">
+        <input type="reset">
+        <!-- 주석 단축키 Ctrl + K + C -->
+        <!--<input type="submit">       <!-- 제출(submit) 태그는 전체 적용-->
+        
+        <button>버튼</button>   <!-- button 태그는 form안에서 submit으로 적용-->
+        <button type="submit">submits버튼</button><!-- type태그 붙이면 버튼으로 적용됨-->
+    </fotm>
+    
+    <!-- 버튼 태그에 이미지 삽입-->
+    <br>
+    <button>
+        <img src="계란.jpg">
+        계란 버튼
+    </button>
+
+    <br><br>
+    <form>
+        <input type="text">
+        <input type="reset" disabled> <!--폼 구성  disabled-->
+        <br>
+
+        <textarea readonly>다중 텍스트 입력 공간</textarea> <!--읽기전용 readonly-->
+        
+    </fotm>
+
+
+
+</body>
+</html>
