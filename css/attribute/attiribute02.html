@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Black+And+White+Picture&display=swap"
+        rel="stylesheet">
+
+
+
+
+    <style>
+        .font-attr1 {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 32px;
+            font-variant: small-caps;
+            letter-spacing: 10px;
+            line-height: 2em;
+            /* (em)__부모요소 대비 2배 */
+        }
+
+        .font-attr2 {
+            font-weight: bold;
+            /* bold 진하게 700 */
+            font-style: oblique;
+            /* ltalic : 이텔릭체 라는 글꼴이 있음 */
+            /* obluque : 글꼴 상관없이 기울이기 */
+        }
+
+        .font-box {
+            font-size: 16px;
+            text-align: center;
+        }
+
+        .font-box2 {
+            font-size: 20px;
+        }
+
+        .p1-inbox {
+            font-size: 1.5em;
+            /*부모요소 대비 1.5배 폰트 사이즈 증가*/
+            text-align: center;
+
+        }
+
+        .p2-inbox {
+            font-size: 3rem;
+            /* rem 은 html 크기 대비 3배 size 증가 */
+        }
+
+        html {
+            font-size: 15px;
+        }
+
+        /* html 기본  폰트 사이즈 */
+
+            
+                .black-and-white-picture-regular {
+                font-family: "Black And White Picture", system-ui;
+                font-weight: 400;
+                font-style: normal;
+            }
+
+    
+    </style>
+
+</head>
+
+<body>
+
+    <p>기본 텍스트</p>
+    <P class="font-attr1">font attr1</P>
+    <p class="font-attr1">폰트 속성1</p>
+
+    <p>햄버거 오늘만 특가!
+        <span style="text-decoration: line-through;">5,000원</span>
+        -><span style="text-decoration: underline;"> 3,000원</span>
+    </p>
+
+
+    <p class="font-attr2">Here is font font-attr2</p>
+
+
+    <div class="font-box">
+        <p>박스 안에 글자 1</p>
+        <p class="p1-inbox">박스 안에 글자 1</p>
+        <p class="p2-inbox black-and-white-picture-regular">박스 안에 글자 2</p>
+    </div>
+
+    <div class="font-box2">
+        <p>박스 안에 글자 1</p>
+        <p class="nanum-brush-script-regular">박스 안에 글자 1</p>
+        <p class="p2-inbox">박스 안에 글자 2</p>
+    </div>
+
+
+</body>
+
+</html>
