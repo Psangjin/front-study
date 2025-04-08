@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+                margin : 0;
+                padding : 0;
+                box-sizing : border-box;
+            }
+
+        .container {
+            width: 200px;
+            background-color: lightgray;
+            position: relative;
+        }
+
+        .menu {
+            height: 50px;
+            text-align: center;
+        }
+
+        .submenu {
+            background-color: lightgreen;
+            position: absolute;
+            left: 0px;
+            top: 50px;
+            width: 100%;
+            display:none;
+        }
+
+        .item {
+            height: 50px;
+        }
+
+        ,menu:hover ~ .submenu {
+            display:block;
+        }
+        .container:hover .submenu {
+            display: block;
+        }
+
+        .item:hover {
+            background-color: lightblue;
+        }
+    </style>
+</head>
+
+<body>
+    
+    <div class="container">
+        <div class="menu">Menu</div>
+        <div class="submenu">
+            <div class="item">Submenu 1</div>
+            <div class="item">Submenu 1</div>
+            <div class="item">Submenu 1</div>
+        </div>
+
+    </div>
+
+    <p>다음에 추가될 내용</p>
+</body>
+</html>
