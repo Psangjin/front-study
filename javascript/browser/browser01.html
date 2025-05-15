@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>                         /*  5000 으로 잡은것은 스크롤 나오게 하려고 */
+        body { 
+            width: 5000px;              
+            height: 5000px;
+        }
+
+        button {
+            position: fixed;
+            left: 100px;
+            top:100px;
+        }
+    </style>
+</head>
+<body>
+    <h1>browser01.html</h1>
+    <button onclick="scrollInfo()">스크롤 위치 정보</button>
+
+    <script>
+        //js 영역
+        console.log(window.innerWidth);         // 내부 가로
+        console.log(window.innerHeight);        // 내부 세로
+        console.log(window.outerWidth);         // 브라우저 가로
+        console.log(window.outerHeight);        // 브라우저 세로
+        console.log(window.screenTop);          // 모니터 상단에서 브라우저 시작 위치 까지의 여백
+        console.log(window.screenY);            // 모니터 왼쪽에서 브라우저 시작 위치 까지의 여백
+        console.log(window.screenLeft);
+        console.log(window.screenX);
+        
+
+        function scrollInfo(){
+            console.log(window.scrollX);
+            console.log(window.scrollY);
+        }
+
+    </script>
+</body>
+</html>

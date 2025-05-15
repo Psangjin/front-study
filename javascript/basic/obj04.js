@@ -45,3 +45,7 @@ console.log(today.getHours());
 console.log(today.getMinutes());
 console.log(today.getSeconds());
 
+console.log(Math.abs(-10));         //절대값
+console.log(Math.max(-10));         //최댓값
+console.log(Math.min(-10));         //최솟값
+

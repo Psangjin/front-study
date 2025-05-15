@@ -62,7 +62,7 @@ console.log(z);
 x[1] = 20;
 console.log(x);
 console.log(y);
-console.log(z);
+console.log(z);             // 값 그대로 유지
 
 
 // splice 함수
@@ -94,9 +94,9 @@ let obj = {
     menu:"김밥"
 };
 console.log(obj);
-obj.menu = "참치김밥";          //기존에 그냥 덮어쓰기해서 값을 바꿔줌
+obj.menu = "참치김밥";           //기존에 그냥 덮어쓰기해서 값을 바꿔줌      (값 저장)
 console.log(obj);
-obj.price = 5500;               // 그냥 추가 하면 추가됨
+obj.price = 5500;               // 그냥 추가 하면 추가됨        (새로운 키값으로 저장 [추가])
 console.log(obj);
-delete obj.price;               // 삭제하면 삭제됨
-console.log(obj);
+delete obj.price;               // 삭제하면 삭제됨          (특정 키값 삭제)
+console.log(obj); 
